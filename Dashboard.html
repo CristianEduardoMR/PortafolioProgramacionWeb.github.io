@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Educativo Edu</title>
+    <link rel="stylesheet" href="Dashboard.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar Izquierdo -->
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-circle"></div>
+                <span class="logo-text">edu</span>
+            </div>
+            
+            
+            <nav>
+                <ul>
+                    <li class="active">
+                        <i class="fas fa-calendar"></i>
+                        <span>Schedule</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-chart-line"></i>
+                        <span>Progress</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>Messages</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="logout">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Log out</span>
+            </div>
+        </aside>
+
+        <!-- Contenido Principal -->
+        <main class="main-content">
+            <!-- Encabezado -->
+            <header>
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+            </header>
+
+            <!-- Banner -->
+            <section class="banner">
+                <h2>Effective education!</h2>
+                <p>Learning is easy and effective with us. Open the panel and watch your progress and growth in knowledge!</p>
+            </section>
+
+            <!-- Eventos -->
+            <section class="events">
+                <div class="section-header">
+                    <h3>Events</h3>
+                    <span>More →</span>
+                </div>
+                <div class="events-grid">
+                    <div class="event-card">
+                        <p>26.02</p>
+                        <h6>18:00-22:30</h6>
+                        <p>UX/UI workshop</p>
+                    </div>
+                    <div class="event-card">
+                        <p>02.03</p>
+                        <h6>10:00-12:30</h6>
+                        <p>English lecture</p>
+                    </div>
+                    <div class="event-card">
+                        <p>07.03</p>
+                        <h6>18:00-19:30</h6>
+                        <p>Business lecture</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Progreso -->
+            <section class="progress">
+                <div class="progress-header">
+                    <h3>Timing & progress</h3>
+                    <span>More →</span>
+                </div>
+                <div class="progress-content">
+                    <div class="progress-chart">
+                        <canvas id="timelineChart"></canvas>
+                    </div>
+                    <div class="progress-details-container">
+                        <div class="progress-details">
+                            <div class="progress-item">
+                                <div class="progress-label">
+                                    <span>Computer Science</span>
+                                    <span>37%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 37%; background-color: #4ecdc4;"></div>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-label">
+                                    <span>Science</span>
+                                    <span>83%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 83%; background-color: #45b7d1;"></div>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-label">
+                                    <span>Business</span>
+                                    <span>51%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 51%; background-color: #ff6b6b;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-details-text">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Panel Derecho -->
+        <aside class="right-panel">
+            <div class="right-panel-header">
+                <i class="fas fa-bell"></i>
+                <span>Kate G.</span>
+            </div>
+        
+            <div class="section-header">
+                <h3>Your Courses</h3>
+                <span>More →</span>
+            </div>
+        
+            <div class="course-item">
+                <div class="course-icon art"></div>
+                <div class="course-info">
+                    <div class="course-title">Art</div>
+                    <span>35 hours</span>
+                </div>
+                <span>→</span>
+                <br></br>
+            </div>
+            
+            <div></div>
+
+            <div class="course-item">
+                <div class="course-icon business"></div>
+                <div class="course-info">
+                    <div class="course-title">Business</div>
+                    <span>40 hours</span>
+                </div>
+                <span>→</span>
+                <br></br>
+            </div>
+            
+            <div class="course-item">
+                <div class="course-icon science"></div>
+                <div class="course-info">
+                    <div class="course-title">Science</div>
+                    <span>25 hours</span>
+                </div>
+                <span>→</span>
+                <br></br>
+            </div>
+            
+            <div class="course-item">
+                <div class="course-icon math"></div>
+                <div class="course-info">
+                    <div class="course-title">Mathematics</div>
+                    <span>15 hours</span>
+                </div>
+                <span>→</span>
+            </div>            
+        
+            <div class="premium-upgrade">
+                <div class="premium-content">
+                    <div class="premium-text">
+                        <h4>Upgrade to Premium</h4>
+                        <p>Unlock full access to all features</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('timelineChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                    datasets: [{
+                        label: 'Study Hours',
+                        data: [2, 4, 3, 5, 2, 6, 7],
+                        borderColor: '#4ecdc4',
+                        backgroundColor: 'rgba(78, 205, 196, 0.2)',
+                        tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: {
+                                display: true,
+                                color: '#f8f9fa'
+                            }
+                        },
+                        x: {
+                            grid: {
+                                display: false
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
